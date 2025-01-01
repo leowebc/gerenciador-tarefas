@@ -36,9 +36,9 @@ describe('AppComponent', () => {
   it('deve renderizar o componente header', () => {
     const fixture = TestBed.createComponent(AppComponent);    
 
-    //const headerDebubEl = fixture.debugElement.query(By.css('app-header'));
+    const headerDebubEl = fixture.debugElement.query(By.css('app-header'));
 
-    //expect(headerDebubEl).toBeTruthy();
+    expect(headerDebubEl).toBeTruthy();
 
   });
 
