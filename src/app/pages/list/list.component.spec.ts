@@ -28,17 +28,29 @@ describe('ListComponent', () => {
     const liEls = ulEl.queryAll(By.css('li'));
     expect(liEls.length).toBe(3);*/
 
+
+    //*****************Forma 2************************/
+    /*
     const todoSection = fixture.debugElement.query(By.css('#todo-list'));
     expect(todoSection).toBeTruthy();
     const todoItems = todoSection.query(By.css('ul')).queryAll(By.css('li'));
     expect(todoItems.length).toBe(3);
 
-
     const completedSection = fixture.debugElement.query(By.css('#completed-list'));
     expect(completedSection).toBeTruthy();
     const completedItems = completedSection.query(By.css('ul')).queryAll(By.css('li'));
-    expect(completedItems.length).toBe(3);
+    expect(completedItems.length).toBe(3);*/
 
+
+    const todoSection = fixture.debugElement.query(By.css('[data-testid="todo-list"]'));
+    expect(todoSection).toBeTruthy();
+    const todoItems = todoSection.queryAll(By.css('[data-testid="todo-list-item"]'));
+    expect(todoItems.length).toBe(3);
+
+    const completedSection = fixture.debugElement.query(By.css('[data-testid="completed-list"]'));
+    expect(completedSection).toBeTruthy();
+    const completedItems = completedSection.queryAll(By.css('[data-testid="completed-list-item"]'));
+    expect(completedItems.length).toBe(3);
     
   });
 });
