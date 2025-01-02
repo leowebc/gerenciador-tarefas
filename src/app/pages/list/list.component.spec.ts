@@ -42,6 +42,10 @@ describe('ListComponent', () => {
     expect(completedItems.length).toBe(3);*/
 
 
+
+    
+
+
     const todoSection = fixture.debugElement.query(By.css('[data-testid="todo-list"]'));
     expect(todoSection).toBeTruthy();
     const todoItems = todoSection.queryAll(By.css('[data-testid="todo-list-item"]'));
