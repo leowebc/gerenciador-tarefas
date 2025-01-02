@@ -4,15 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
 import { Component } from '@angular/core';
 import { HeaderComponent } from './shared/components/header/header.component';
-
-
-@Component({
-  selector: 'app-header',
-  standalone: true,
-  template: ''
-  
-})
-class FakeHeaderComponent {} 
+import { FakeHeaderComponent } from '../testing/mocks/fake-header.component';
 
 
 describe('AppComponent', () => {
