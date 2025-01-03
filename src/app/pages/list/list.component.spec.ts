@@ -47,12 +47,12 @@ describe('ListComponent', () => {
     const todoSection = fixture.debugElement.query(By.css('[data-testid="todo-list"]'));
     expect(todoSection).toBeTruthy();
     const todoItems = todoSection.queryAll(By.css('[data-testid="todo-list-item"]'));
-    expect(todoItems.length).toBe(3);
+    expect(todoItems.length).toBe(5);
 
     const completedSection = fixture.debugElement.query(By.css('[data-testid="completed-list"]'));
     expect(completedSection).toBeTruthy();
     const completedItems = completedSection.queryAll(By.css('[data-testid="completed-list-item"]'));
-    expect(completedItems.length).toBe(3);
+    expect(completedItems.length).toBe(5);
     
   });
 });
